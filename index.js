@@ -33,8 +33,8 @@ var listener = app.listen(process.env.PORT || 3000, function () {
 
 let date;
 
-app.get('/api/:input', (req, res) => {
-  let input = req.params.input
+app.get('/api/:date', (req, res) => {
+  let input = req.params.date
 
   if(input.includes('-')) {
     date = new Date(input);
